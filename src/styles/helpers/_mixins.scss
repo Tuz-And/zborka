@@ -1,0 +1,45 @@
+
+@mixin select($select-color:#fff,$select-bg-color:$pr-1){
+	&::selection{
+		color:$select-color;
+		background-color:$select-bg-color;
+	}
+}
+@mixin fonts($font-size:14px,$font:$font-regular,$color:$d1-4){
+	font-size: $font-size;
+	font-family:$font;
+	color:$color;
+}
+
+
+@mixin buttons($width-buttons:220px, $height-buttons:50px, $color-buttons:$light, $bg-color-buttons:$pr-2, $hover-color-buttons:$light, $hover-bg-color-buttons:$l1-2, $disabled-color-buttons:$light){
+	width:$width-buttons;
+	height:$height-buttons;
+	color:$color-buttons;
+	background-color:$bg-color-buttons;
+	border-radius:4px;
+	border-style:none;
+	font-size: 14px;
+    font-family: "MuseoSans";
+    &:hover{
+		color:$hover-color-buttons;
+		background-color:$hover-bg-color-buttons;
+	}
+	&:disabled{
+		color:$disabled-color-buttons;
+		background-color:$disabled-bg-color-buttons;
+	}
+}
+// @mixin li($content:'<i class="fas fa-check-circle"></i>', $color-first-leter:$pr-1){
+// 	@include fonts(15px,$font-medium,$d1-4);
+// 	list-style-type:none;
+// 	&:before{
+// 		content:$content;
+// 	}
+// 	&::first-letter{
+// 		color:$color-first-leter;
+// 	}
+// }
+
+
+

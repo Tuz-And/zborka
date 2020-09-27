@@ -1,0 +1,55 @@
+.bg-header{
+	background-color:$pr-1;
+}
+.logotip{
+	min-width: 290px;
+}
+.icon{
+	width: 62px;
+	height: 62px;
+	margin: 20px;
+}
+.icon img{
+	position:absolute;
+}
+.logo{
+	margin-left: 5px; 
+	color: $light;
+	font-family: $font-regular;
+	font-size:12px;
+}
+.logo span{
+	font-family:'Gabriola';
+	font-size:39px;
+	line-height: 0.8em;
+}
+.logo span:nth-of-type(2){
+	color: $pr-3;
+	font-size:18px;
+	text-transform:uppercase;
+	font-family: $font-bold;
+}
+.nav, .nav select, .header-botton, button{	
+	text-transform:uppercase;
+}
+ul{
+	margin: 5px;
+	list-style-type:none;
+	line-height: 1.5em;
+}
+.bg-header li, .nav select{ 
+	@include fonts(15px,Poppins-Medium,$light);
+	list-style-type:none;
+	display:inline-block;
+}
+.nav select{
+	color:$light;
+	background:$pr-1;
+	border:none;
+}
+.header-botton a, .burger{
+	color: $light;
+	font-size: 30px;
+}
+.button-sing-in{@include buttons(100px,40px,$light,$d1-1,$light,$l2-1);}
+.button-order{@include buttons(100px,40px);}

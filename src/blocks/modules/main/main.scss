@@ -1,0 +1,42 @@
+body{
+	font-family: $font-regular;
+}
+h1{	@include fonts(35px,$font-bold,$d3-4);}	
+h2{	@include fonts(33px,$font-medium,$d2-4);}
+h3{	@include fonts(27px,$font-medium,$d3-4);}	
+h4{	@include fonts(22px,$font-medium,$d3-4);}	
+h5{	@include fonts(17px,$font-medium,$d3-4);}	
+h6{	@include fonts(15px,$font-medium,$d3-4);}
+.main h2, h3, h4, h5, h6{
+	margin:1.2em 0; 
+}	
+.main p{ @include fonts;}
+// li{ @include li;}
+blockquote{
+	@include fonts(17px,$font-regular,$d1-1);
+	background-color:$l3-1;
+	// border-left:2px solid $pr-1;
+	padding: 10px 30px;
+	margin:0;  
+}
+.main sub{
+	@include fonts(20px,$font-medium,$d1-4);
+}
+.main{
+	line-height: 1.5em;
+}
+.main li{
+	@include fonts(15px,$font-medium,$d1-4);
+	list-style-type: none;
+	line-height: 1.9em;
+}
+
+.main-lists, .main p:last-of-type {
+	columns: 2;
+}
+.main-lists ul:first-of-type li::first-letter {
+	color:$pr-1;
+}
+.main-lists ul:last-of-type li::first-letter {
+	color:$pr-2;
+}

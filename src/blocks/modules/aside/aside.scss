@@ -1,0 +1,110 @@
+.search {
+  margin:50px 0; 
+}
+.search input, .search button{
+  background-color: $l3-4;
+  height: 50px;
+  border:1px solid $l2-4;
+  color:$pr-4;
+}
+.search input{
+  width: 100%;
+  padding-left: 20px;
+
+}
+.search button{
+  position: absolute;
+  right: 0;
+  width:50px;
+ border-left:none;
+}
+.categories>*{
+  padding:25px 0;
+  margin: 0;
+}
+
+.categories>p{
+  border-bottom:1px solid $pr-1;
+  @include fonts(14px,$font-bold,$d1-1);
+  text-transform: uppercase;
+}
+.categories>ul a{
+    @include fonts(14px,$font-regular,$d1-4);
+    text-decoration: none;
+}
+.categories ul li{  
+  color: $pr-1;
+}
+.categori li, .archive li{
+  padding: 15px 10px;
+  background-color:$l3-1;
+  border-top:1px solid $l2-1;
+}
+.galerry p{
+  @include fonts(12px, $font-medium, $l1-4);
+}
+.galerry{
+    border-bottom:1px solid $pr-1;
+}
+.carta p {
+  text-align: justify;
+}
+.rocket{
+  position:relative;
+  background: $pr-1;
+  height: 380px;
+  width:100%;
+}
+.rocket>img{
+  position:absolute;
+  bottom: -1px;
+}
+.scissors{
+  position:relative;
+  background:$d1-1;
+  margin: 20px;
+  border:2px dashed $light;
+  border-radius: 15px;
+  text-align: center;
+  color: $light;
+  padding:20px 0;
+}
+.scissors>img{
+  position:absolute;
+  top:-15px;
+  left:-10px;
+  align:left; 
+}
+.scissors h1{
+  color: $pr-3;
+}
+.scissors p:first-of-type{
+  font-family: $font-bold; 
+}
+.button-aside{
+  height: 40px;
+  width: 100%;
+  background-color:$d1-1;
+  color: $l2-1;
+  padding:0;
+
+}
+.discounts figure div{
+  background-color:$pr-1;
+  height: 70px;
+  width: 70px;
+  border-radius:50%;
+  display: inline-flex;
+  
+}
+.discounts figure div h4{
+  margin:auto;
+  text-align:center;
+  color: $pr-3;
+}
+.discounts figcaption {
+  // width: 100
+  padding:;
+}
+
+
